@@ -136,6 +136,15 @@ form.addEventListener('submit',(e)=>{
                })
           }
         })
+     
+            const api_link=`https://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=cbe3dd267a18f6c89943b3eff94f1ed7`
+            
+           fetch(api_link).then((e)=>{
+               return e.json()
+              }).then((newdata)=>{
+                 weatherData(newdata)
+              })
+     
     function weatherData(e){
         temp.innerHTML=Math.round(e.main.temp)+"&#176;"
         nomi.innerHTML=e.name
