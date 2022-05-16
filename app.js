@@ -78,7 +78,7 @@ form.addEventListener('submit',(e)=>{
                 cityName='New york'
                 weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url('./img/newYork.jpg ')`;
                 weatherApp.style.backgroundRepeat="no-repeat";
-                weatherApp.style.backgroundSize='100%  100%'
+                weatherApp.style.backgroundSize='100%'
                 weatherData();
                 
             }
@@ -116,7 +116,7 @@ form.addEventListener('submit',(e)=>{
                 cityName='Tashkent'
                 weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url('./img/tashkent.jpg')`;
                 weatherApp.style.backgroundRepeat="no-repeat";
-                weatherApp.style.backgroundSize='100% 100%'
+                weatherApp.style.backgroundSize='100%'
             }
             if(e.target.classList=='city moscow')
             {
