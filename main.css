@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;800;900&display=swap);
-
 *{
   box-sizing: border-box;
   margin: 0;
@@ -7,20 +6,18 @@
 }
 body {
   font-family: 'Syne Mono', monospace;
- font-size: 18px;
- background-color:rgb(24, 24, 24,0.5);
+   font-size: 16px;
+ background:url('./img/london.jpg');
 }
-/*  */
 .weather-app {
   min-height: 100vh;
-  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('./img/london.jpg');
-  background-repeat: no-repeat;
+  background:linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)) ,url('./img/london.jpg');color:#fff;
+  background-repeat: repeat-x;
   background-size: 100% 100% ;
   position: relative;
   z-index: 0;
-  color:#fff;
+  
 }
-/* */ 
 .container {
   width: 100%;
   height: 100%;
@@ -81,9 +78,8 @@ body {
   top:0;
   right: 0;
   width: 40%;
-  backdrop-filter: blur(10px);
-  height: 100%;
-  background: rgba(110, 110, 110, 0.781);
+  backdrop-filter: blur(3px);
+  height: 100vh;
    box-shadow: 0 8px 10px rgba(6, 6, 6, 0.3);
    border:1px solid rgba(225,225,225,0.18);
    z-index: 1;

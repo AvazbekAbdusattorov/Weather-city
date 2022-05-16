@@ -70,13 +70,13 @@ form.addEventListener('submit',(e)=>{
 //  berilgan davlatlar uchun
       document.addEventListener('click',(e)=>{   
             const arrayCountry = [' New york',
-                'Seul','Paris','Tokyo','Tashkent']  
+                'Seul','Paris','Tokyo','Tashkent','Moscow']  
     
             if(e.target.classList=='city newYork')
             {
                 Fetchfunktion(arrayCountry[0]);
                 cityName='New york'
-                weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('./img/californiya.avif ')`;
+                weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url('./img/californiya.avif ')`;
                 weatherApp.style.backgroundRepeat="no-repeat";
                 weatherApp.style.backgroundSize='100%  100%'
                 weatherData();
@@ -86,7 +86,7 @@ form.addEventListener('submit',(e)=>{
             {
                 Fetchfunktion(arrayCountry[1]);
                 cityName='Seul'
-                weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('./img/seul.jpg')`;
+                weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url('./img/seul.jpg')`;
                 weatherApp.style.backgroundRepeat="no-repeat";
                 weatherApp.style.backgroundSize='100%'
                 weatherData();
@@ -96,7 +96,7 @@ form.addEventListener('submit',(e)=>{
             {
                 Fetchfunktion(arrayCountry[2]);
                 cityName='Paris'
-                weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('./img/paris.jpg ')`;
+                weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url('./img/paris.jpg ')`;
                 weatherApp.style.backgroundRepeat="no-repeat";
                 weatherApp.style.backgroundSize='100%'
             }
@@ -114,7 +114,15 @@ form.addEventListener('submit',(e)=>{
             {
                 Fetchfunktion(arrayCountry[4]);
                 cityName='Tashkent'
-                weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('./img/tashkent.jpg')`;
+                weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url('./img/tashkent.jpg')`;
+                weatherApp.style.backgroundRepeat="no-repeat";
+                weatherApp.style.backgroundSize='100%'
+            }
+            if(e.target.classList=='city moscow')
+            {
+                Fetchfunktion(arrayCountry[5]);
+                cityName='Moscow'
+                weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url('./img/moskov.jpg')`;
                 weatherApp.style.backgroundRepeat="no-repeat";
                 weatherApp.style.backgroundSize='100%'
             }
