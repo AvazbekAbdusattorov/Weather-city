@@ -62,7 +62,7 @@ form.addEventListener('submit',(e)=>{
             if(cityName=="Tashkent" || cityName=="tashkent"){
                 weatherApp.style.background=` linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('./img/tashkent.jpg ') `;
                 weatherApp.style.backgroundRepeat="no-repeat";
-                weatherApp.style.backgroundSize='100%';
+                weatherApp.style.backgroundSize='100% 100%';
         
             }
    }})
@@ -78,7 +78,7 @@ form.addEventListener('submit',(e)=>{
                 cityName='New york'
                 weatherApp.style.background=`linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('./img/californiya.avif ')`;
                 weatherApp.style.backgroundRepeat="no-repeat";
-                weatherApp.style.backgroundSize='100%'
+                weatherApp.style.backgroundSize='100%  100%'
                 weatherData();
                 
             }
@@ -133,8 +133,8 @@ form.addEventListener('submit',(e)=>{
         nomi.innerHTML=e.name
         condition.innerHTML=e.weather[0].main
         icon.src=`https://openweathermap.org/img/wn/${e.weather[0].icon}@2x.png`
-        cloud.textContent=e.clouds.all
-        humidity.textContent=e.main.humidity
+        cloud.textContent=e.clouds.all+'%'
+        humidity.textContent=e.main.humidity+'%'
         wind.textContent=Math.round(e.wind.speed)+"km/h"
        }
 
